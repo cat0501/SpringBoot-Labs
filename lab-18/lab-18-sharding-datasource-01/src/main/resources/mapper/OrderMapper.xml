@@ -6,14 +6,14 @@
         id, user_id
     </sql>
 
-    <select id="selectById" parameterType="Integer" resultType="OrderDO">
+    <select id="selectById" parameterType="Integer" resultType="cn.iocoder.springboot.lab18.shardingdatasource.dataobject.OrderDO">
         SELECT
             <include refid="FIELDS" />
         FROM orders
         WHERE id = #{id}
     </select>
 
-    <select id="selectListByUserId" parameterType="Integer" resultType="OrderDO">
+    <select id="selectListByUserId" parameterType="Integer" resultType="cn.iocoder.springboot.lab18.shardingdatasource.dataobject.OrderDO">
         SELECT
             <include refid="FIELDS" />
         FROM orders

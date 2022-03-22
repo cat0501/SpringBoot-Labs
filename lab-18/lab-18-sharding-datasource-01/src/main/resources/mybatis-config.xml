@@ -2,6 +2,7 @@
 <!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
 
+    <!--因为在数据库中的表的字段，我们是使用下划线风格，而数据库实体的字段使用驼峰风格，所以通过 mapUnderscoreToCamelCase = true 来自动转换。-->
     <settings>
         <!-- 使用驼峰命名法转换字段。 -->
         <setting name="mapUnderscoreToCamelCase" value="true"/>

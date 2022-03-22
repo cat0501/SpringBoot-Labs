@@ -16,6 +16,8 @@ public class OrderConfigDO {
      */
     private Integer payTimeout;
 
+
+
     public Integer getId() {
         return id;
     }
